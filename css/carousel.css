@@ -1,0 +1,37 @@
+/******************carousel**********************/
+#carousel{position:relative;}
+	#carousel .es-carousel{width:100%; overflow:hidden;}
+		#carousel li{float:left; position:relative;}
+#carousel .es-nav-prev, #carousel .es-nav-next{
+	display:block !important;
+	width:31px;
+	height:36px;
+	overflow:hidden;
+	background-position:center top;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:-61px;
+	text-indent: -100%;
+	font-size:0;
+	line-height:0;
+	white-space: nowrap;
+	cursor:pointer;
+	z-index:996;
+}
+#carousel .es-nav-prev{background-image:url(../images/carousel-prev.png); right:30px;}
+#carousel .es-nav-next{background-image:url(../images/carousel-next.png); right:0;}
+	#carousel .es-nav-prev:hover, #carousel .es-nav-next:hover{background-position:0 -30px;}
+
+/*-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 995px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 479px) {
+
+}

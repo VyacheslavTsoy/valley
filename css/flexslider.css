@@ -1,0 +1,89 @@
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {margin: 0 0 0px; position: relative; overflow: hidden;}
+.flexslider .slides li{position: relative;}
+.flex-viewport {}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+/* Direction Nav */
+.flex-direction-nav a {
+	width: 19px;
+	height: 31px;
+	margin: -84px 0 0;
+	display: block;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+.flex-direction-nav .flex-next {right: 19px;background: url(../images/slider_next.png) 0 0 no-repeat;}
+.flex-direction-nav .flex-prev {left: 19px;background: url(../images/slider_prev.png) 0 0 no-repeat;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {}
+.flex-direction-nav .disabled {cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {position: absolute;right: 21px; bottom: 12px;text-align: right;}
+.flex-control-nav li {margin: 0 0px 0 10px; display: inline-block; }
+.flex-control-paging li a {width: 18px; height: 18px; display: block;cursor: pointer; text-indent: -9999px;border: 1px solid rgba(255,255,255,0.6);;}
+.flex-control-paging li a:hover, .flex-control-paging li a.flex-active{ background-position:0 -21px;background:rgba(255,255,255,0.6);}
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .active {opacity: 1; cursor: default;}
+
+
+.slideshow_banner{
+	background: url(../images/slideshow_banner_bg.png) 0 0 repeat;
+	border-top: 1px solid #aea39d;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	padding: 6px 17px 48px;
+	line-height: 20px;
+}
+.slideshow_banner p{
+	margin-bottom: 4px;
+}
+.slider_title{
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 9px;
+	text-decoration: underline;
+}
+.slide_label{
+	background: #666666;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	color: #fff;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 1px;
+	padding: 0 5px 3px;
+}
+.slide_label:after{
+	width: 11px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	bottom: -11px;
+	right: 9px;
+	background: url(../images/slide_label_aft.png) 0 0 no-repeat;
+	content: "";
+}

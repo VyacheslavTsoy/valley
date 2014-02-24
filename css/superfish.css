@@ -1,0 +1,148 @@
+nav{ 
+	position:relative;
+	margin: 0px 0 0 0;
+	background-color: #ede6c6;
+}
+.nav_inner{
+	padding: 10px 15px 10px 8px;
+}
+.menu{float: left;}
+.menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.menu ul li {width:100%}
+.menu li {float:left;position:relative}
+
+.menu_link{
+  display:block;
+  position:relative;
+  font-size: 22px;
+  line-height: 30px;
+  color:#333333;
+}
+.menu_link:after{
+	height: 2px;
+	width: 100%;
+	background: #333333;
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	content: "";
+}
+
+.menu_link:hover:after,
+.current .menu_link:after,
+li.sfHover .menu_link:after{
+  	width: 0;
+	left: 50%;
+}
+
+.menu__item{
+  margin-right: 27px;
+}
+.menu__item.current:after{
+	display: block;
+	position: absolute;
+	bottom: -26px;
+	left: 50%;
+	margin-left: -18px;
+	width: 33px;
+	height: 16px;
+	background: url(../images/current_arrow.png) 0 0 no-repeat;
+	content: "";
+}
+
+.nav_social{
+	float: right;
+	padding: 5px 0px 0 0;
+}
+	.nav_soc__icon{
+		display: inline-block;
+		height: 21px;
+		margin-left: 11px;
+		background: url(../images/social1.png) 0 0 no-repeat;
+	}
+	.nav_soc__icon.rss{
+		width: 20px;
+	}
+	.nav_soc__icon.facebook{
+		width: 11px;
+		background-position: -36px 0;
+	}
+	.nav_soc__icon.twitter{
+		width: 24px;
+		background-position: -62px 0;
+	}
+	.nav_soc__icon:hover{
+		-moz-transform: translateY(-5px);
+		-webkit-transform: translateY(-5px);
+		-o-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+/*================================>> 2 Level <<========================================*/
+.sub_menu,
+.li.sfHover>.sub_menu{
+	left:0;top:50px;
+	width: px;
+	padding:0 0 0 0;
+	z-index:99;
+}
+.sub_menu_item{}
+.sub_menu_link{}
+.sub_menu_link:hover,
+li.sfHover li.sfHover .sub_menu_link{}
+
+/*================================>> 3 Level <<========================================*/
+.menu li li ul{left:0;top:0px;width: px;padding:0 0 0 0;z-index:99}
+.menu li li li{}
+.menu li li li a{}
+.menu li li li a:hover{}
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+@media only screen and (max-width: 995px) {
+	 .menu>li>a .menu-arrow{
+    display:inline-block;
+    width:px;
+    margin-left:5px;
+    height:;
+    text-indent:-100%;
+    font-size:0;
+    line-height:0;
+    background: url('../images/menu_arrow.png') no-repeat;
+    vertical-align: middle;
+}
+	 .menu a.sf-with-ul{
+    
+   }
+	 .menu a:hover .menu-arrow, .menu li.current>a .menu-arrow, .menu .sfHover>a:hover .menu-arrow{
+    background-position:0;
+   }
+}
+
+@media only screen and (max-width: 767px) {
+  nav{
+		float:none;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#fff;
+		padding:29px 0;
+	}
+		nav:before{
+			content:'Menu:';
+			display:block;
+			margin-bottom:5px;
+		}
+	.menu{display:none;}
+		nav select{
+		font:12px/15px Arial, Helvetica, sans-serif;
+		color:#464646;
+		width:100%;
+	    outline: none;
+	    padding: 5px;
+		border:2px solid #9e9e9e;
+	}
+	
+}
+
+@media only screen and (max-width: 479px) {
+	
+}
