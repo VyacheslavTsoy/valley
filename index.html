@@ -27,55 +27,69 @@
     	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
     <![endif]-->
 </head>
-<body>
+<body class="fullwidth_bg">
 <!--==============================header=================================-->
  	<header>
     <div class="container_12">
-      <div class="wrapper header_inner">
-        <h1 class="logo">
-          <a href="index.html">
-            Всероссийская <br>
-            Федерация Волейбола
-          </a>
-        </h1>
-        <div class="header_links">
-          <a href="#" class="header_icon home"></a>
-          <a href="#" class="header_icon sitemap"></a>
-          <a href="#" class="header_icon mail"></a>
+      <div class="row header_inner">
+        <div class="grid_12">
+          <h1 class="logo">
+            <a href="index.html">
+              Всероссийская <br>
+              Федерация Волейбола
+            </a>
+          </h1>
+          <div class="header_links">
+            <a href="#" class="header_icon home"></a>
+            <a href="#" class="header_icon sitemap"></a>
+            <a href="#" class="header_icon mail"></a>
+          </div>
+          <form class="wrapper header_search">
+            <input type="text" class="header_serch__field" value="Поиск по сайту" onBlur="if(this.value=='') this.value='Поиск по сайту'" onFocus="if(this.value =='Поиск по сайту' ) this.value=''">
+            <button class="blue_bg header_search__btn">искать</button>
+          </form>
         </div>
-        <form class="wrapper header_search">
-          <input type="text" class="header_serch__field" value="Поиск по сайту" onBlur="if(this.value=='') this.value='Поиск по сайту'" onFocus="if(this.value =='Поиск по сайту' ) this.value=''">
-          <button class="blue_bg header_search__btn">искать</button>
-        </form>
       </div>
     </div>
   </header>
   <nav>
     <div class="container_12">
-      <div class="clearfix nav_inner">
-        <ul class="menu">
-         <li class="menu__item"><a class="menu_link" href="about.html">О федерации</a></li>
-          <li class="menu__item"><a class="menu_link" href="teams.html">Сборные</a></li>
-          <li class="menu__item"><a class="menu_link" href="clubs.html">Клубы</a></li>
-          <li class="menu__item"><a class="menu_link" href="competitions.html">Соревнования</a></li>
-          <li class="menu__item"><a class="menu_link" href="media.html">Медиа</a></li>
-        </ul>
-        <div class="nav_social">
-         <a href="#" class="nav_soc__icon rss"></a>
-         <a href="#" class="nav_soc__icon facebook"></a>
-         <a href="#" class="nav_soc__icon twitter"></a>
+      <div class="row">
+        <div class="grid_12">
+          <div class="clearfix nav_inner">
+            <ul class="menu">
+               <li class="menu__item"><a class="menu_link" href="about.html">О федерации</a></li>
+                <li class="menu__item"><a class="menu_link" href="teams.html">Сборные</a></li>
+                <li class="menu__item"><a class="menu_link" href="clubs.html">Клубы</a></li>
+                <li class="menu__item"><a class="menu_link" href="competitions.html">Соревнования</a></li>
+              <li class="menu__item"><a class="menu_link" href="media.html">Медиа</a></li>
+            </ul>
+            <div class="nav_social">
+             <a href="#" class="nav_soc__icon rss"></a>
+             <a href="#" class="nav_soc__icon facebook"></a>
+             <a href="#" class="nav_soc__icon twitter"></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </nav>
 
   <section class="slider_box">
-    <div class="container_12">
-      <div class="wrapper">
-        <div class="grid_12">
-          <h2 class="dd_title">
+    <div class="slider_title1 blue-header">
+      <div class="container_12">
+        <div class="row">
+          <div class="grid_12">
+            <h2 class="dd_title blue-header closable-opened">
             В центре внимания <span class="arrow"></span>  <a href="#" class="link1">Все новости</a>
           </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container_12">
+      <div class="row">
+        <div class="grid_12">
           <article class="dd_content">
             <div class="scroll-pane news_col">
               <ul class="news_list">
@@ -248,11 +262,19 @@
   </section>
 <!--==============================content================================-->
   <section id="content">
+    <div class="slider_title1 red-header">
+      <div class="container_12">
+        <div class="row">
+          <div class="grid_12">
+            <h2 class="dd_title red-header closable-opened">Соревнования</h2>
+          </div>
+        </div>
+      </div>
+    </div>
   	<div class="container_12">
-      <div class="clearfix">
+      <div class="row">
         <div class="grid_12">
           <article class="competitions_box">
-            <h2 class="dd_title">Соревнования</h2>
             <div class="dd_content">
               <div class="competitions">
                 <a class="car_btn prev"></a>
@@ -336,10 +358,10 @@
           </article>
         </div>
       </div>
-      <article class="p2 wrapper">
+      <article class="p2 row">
         <div class="grid_6">
           <div class="content_row p2">
-            <h2 class="dd_title">Решения директората <span class="arrow"></span> <a href="#" class="link1">Подробнее</a></h2>
+            <h2 class="dd_title red-header closable-opened">Решения директората <span class="arrow"></span> <a href="#" class="link1">Подробнее</a></h2>
             <div class="dd_content">
               <div class="dd_content__inner lh_20">
                 <ul class="time_list">
@@ -376,7 +398,7 @@
           </div>
           
           <div class="content_row p2">
-            <h2 class="dd_title">90 лет Российскому Волейболу <span class="arrow"></span> <a href="#" class="link1">Подробнее</a></h2>
+            <h2 class="dd_title blue-header closable-opened">90 лет Российскому Волейболу <span class="arrow"></span> <a href="#" class="link1">Подробнее</a></h2>
             <div class="dd_content">
               <figure class="event_img">
                 <img src="images/event_img.jpg" alt="">
@@ -389,7 +411,7 @@
           </div>
         
           <div class="content_row">
-            <h2 class="dd_title">Положение команд <span class="arrow"></span> <a href="#" class="link1">Статистика 2013 год</a></h2>
+            <h2 class="dd_title gray-header closable-opened">Положение команд <span class="arrow"></span> <a href="#">Статистика 2013 год</a></h2>
             <div class="dd_content">
               <div class="wrapper statistics">
                 <div class="statistics_col">
@@ -618,7 +640,7 @@
         </div>
         <div class="grid_6">
           <div class="p2 content_row">
-            <h2 class="dd_title">Календарь соревнований <span class="arrow"></span> <a href="#" class="link1">Все соревнования</a></h2>
+            <h2 class="dd_title red-header closable-opened">Календарь соревнований <span class="arrow"></span> <a href="#" class="link1">Все соревнования</a></h2>
             <div class="dd_content">
               <div class="dd_content__inner1">
                 <div class="wrapper calendar_box">
@@ -640,7 +662,7 @@
           </div>
         
           <div class="p2 content_row">
-            <h2 class="dd_title1">Партнеры <span class="arrow1"></span> <a href="#" class="link4">Подробнее</a></h2>
+            <h2 class="dd_title1 blue-header closable-opened">Партнеры <span class="arrow1"></span> <a href="#" class="link4">Подробнее</a></h2>
             <div class="dd_content">
               <div class="gray_bg1 wrapper partners">
                 <img src="images/partner1.png" alt="">
@@ -680,65 +702,61 @@
     </div>
   </section>
 
-  <section class="wrapper">
-    <div class="gray_bg">
-      <div class="container_12">
-        <div class="clearfix">
-          <div class="grid_12">
-            <h2 class="title4 t_pad">Реклама</h2>
-          </div>
+  <section class="reklama">
+    <div class="container_12">
+      <div class="row">
+        <div class="grid_12 reklama_title_wrap">
+          <h2 class="title4 t_pad">Реклама</h2>
         </div>
       </div>
     </div>
-    <div class="gray_bg1">
-      <div class="container_12">
-        <div class="wrapper">
-          <div class="grid_12">
-            <div class="advert_box">
-              <figure class="f_left advert">
-                <img src="images/advert_logo.png" alt="">
-                <figcaption class="advert_description">
-                  <spsan class="red">Alfos</spsan> — Интернет-магазин товаров для спорта, отдыха и здоровья, обеспечение профессиональных спортивных клубов и спортивных федераций высококачественной продукцией.
-                </figcaption>
-              </figure>
-              <div class="wrapper">
-                <ul class="advert_list">
-                  <li class="advert_item">
-                    <figure class="advert_img">
-                      <img src="images/advert1.png" alt="">
-                    </figure>
-                    <figcaption>
-                      <a href="#">Бандажи и фиксаторы</a>
-                    </figcaption>
-                  </li>
-                  <li class="advert_item">
-                    <figure class="advert_img">
-                      <img src="images/advert2.png" alt="">
-                    </figure>
-                    <figcaption>
-                      <a href="#">Globus Winshot 1000 PRO</a> 430 000
-                    </figcaption>
-                  </li>
-                  <li class="advert_item">
-                    <figure class="advert_img">
-                      <img src="images/advert3.png" alt="">
-                    </figure>
-                    <figcaption>
-                      <a href="#">Micasa MVA 200</a> <br>430 000
-                    </figcaption>
-                  </li>
-                  <li class="advert_item">
-                    <figure class="advert_img">
-                      <img src="images/advert4.png" alt="">
-                    </figure>
-                    <figcaption>
-                      <a href="#">Тайпы и подтейпники</a>
-                    </figcaption>
-                  </li>
-                </ul>
-                <div class="link_wrap1">
-                  <a href="#" class="link5">Открылся офис продаж в УСЗ "Дружба"</a>
-                </div>
+    <div class="container_12">
+      <div class="row">
+        <div class="grid_12 reklama_title_content">
+          <div class="advert_box">
+            <figure class="f_left advert">
+              <img src="images/advert_logo.png" alt="">
+              <figcaption class="advert_description">
+                <spsan class="red">Alfos</spsan> — Интернет-магазин товаров для спорта, отдыха и здоровья, обеспечение профессиональных спортивных клубов и спортивных федераций высококачественной продукцией.
+              </figcaption>
+            </figure>
+            <div class="wrapper">
+              <ul class="advert_list">
+                <li class="advert_item">
+                  <figure class="advert_img">
+                    <img src="images/advert1.png" alt="">
+                  </figure>
+                  <figcaption>
+                    <a href="#">Бандажи и фиксаторы</a>
+                  </figcaption>
+                </li>
+                <li class="advert_item">
+                  <figure class="advert_img">
+                    <img src="images/advert2.png" alt="">
+                  </figure>
+                  <figcaption>
+                    <a href="#">Globus Winshot 1000 PRO</a> 430 000
+                  </figcaption>
+                </li>
+                <li class="advert_item">
+                  <figure class="advert_img">
+                    <img src="images/advert3.png" alt="">
+                  </figure>
+                  <figcaption>
+                    <a href="#">Micasa MVA 200</a> <br>430 000
+                  </figcaption>
+                </li>
+                <li class="advert_item">
+                  <figure class="advert_img">
+                    <img src="images/advert4.png" alt="">
+                  </figure>
+                  <figcaption>
+                    <a href="#">Тайпы и подтейпники</a>
+                  </figcaption>
+                </li>
+              </ul>
+              <div class="link_wrap1">
+                <a href="#" class="link5">Открылся офис продаж в УСЗ "Дружба"</a>
               </div>
             </div>
           </div>
@@ -747,20 +765,20 @@
     </div>
   </section>
 
-  <section class="wrapper">
-    <div class="brown_bg">
+  <section class="sponsors">
+    <div class="sponsors_title_row">
       <div class="container_12">
-        <div class="wrapper">
-          <div class="grid_12">
+        <div class="row">
+          <div class="grid_12 sponsors_title_wrap">
             <h2 class="title4 t_pad">Спонсоры <a href="#" class="link5">Подробнее</a></h2>
           </div>
         </div>
       </div>
     </div>
-    <div class="brown_bg1">
+    <div class="sponsors_content_row">
       <div class="container_12">
-        <div class="wrapper">
-          <div class="grid_12">
+        <div class="row">
+          <div class="grid_12 sponsors_content_wrap">
             <div class="partners_labels">
               <img src="images/sponsor1.jpg" alt="">
               <img src="images/sponsor2.jpg" alt="">
@@ -785,7 +803,7 @@
   
   <aside class="bottom_box">
     <div class="container_12">
-      <div class="wrapper">
+      <div class="row">
         <div class="grid_12 clearfix">
           <div class="f_left wrapper bottom_box__left">
             <div class="bottom_box__sm_col">
@@ -818,13 +836,15 @@
 <!--==============================footer=================================-->
 <footer>
   <div class="container_12">
-    <div class="wrapper">
-      <div class="clearfix grid_12">
-        <div class="f_left">
-          © 2001 — 2013 ОО «Всероссийская Федерация Волейбола»
-        </div>
-        <div class="f_right">
-          Дизайн сайта — <a href="#">Simple Visuals</a>
+    <div class="row">
+      <div class="grid_12">
+        <div class="clearfix footer_inner">
+          <div class="f_left">
+            © 2001 — 2013 ОО «Всероссийская Федерация Волейбола»
+          </div>
+          <div class="f_right">
+            Дизайн сайта — <a href="#">Simple Visuals</a>
+          </div>
         </div>
       </div>
     </div>

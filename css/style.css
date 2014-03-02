@@ -1,6 +1,6 @@
 @import "../css/reset.css";
 @import "../css/superfish.css";
-@import "../css/skeleton.css";
+@import "../css/bootstrap_grids.css";
 @import "../font/calibri.css";
 @import "../css/flexslider.css";
 @import "../css/owl.carousel.css";
@@ -122,7 +122,8 @@ a:hover{
   margin: 5px 3px 0px;
   background: url(../images/r_arrow.png) 0 0px no-repeat;
 }
-.arrow1{
+
+.gray-header .arrow{
   display: inline-block;
   width: 16px;
   height: 13px;
@@ -186,7 +187,7 @@ a:hover{
 /*======================> Header <======================*/
 
 .header_inner{
-  padding: 14px 10px 36px;
+  padding: 14px 0px 36px;
 }
   h1.logo{
     padding: 19px 0 0;
@@ -287,13 +288,13 @@ a:hover{
     background-color: #0065b5;
   }
 /*=====================> Content ========================*/
-#content {padding:0px 0px 0px 0px; min-height: 2500px;}
-.cont_pad{padding: 33px 0 0 0 !important;}
+#content {padding:0px 0px 30px;}
+.cont_pad{padding: 33px 0 30px !important;}
 
 .dd_title,
 .dd_title1,
 .ext_title{
-  background-color: #0065b5;
+  /*background-color: #0065b5;*/
   padding: 15px 20px 12px;
   color: #fff;
   font-size: 17px;
@@ -302,7 +303,7 @@ a:hover{
   letter-spacing: 1px;
 }
 .dd_title.active{
-  background-color: #ab0000;
+  /*background-color: #ab0000;*/
 }
 
 .dd_title.active:after,
@@ -311,10 +312,10 @@ a:hover{
   -webkit-transform: rotate(180deg);
 }
 .dd_title1{
-  background-color: #dddddd;
-  color: #333333;
+  /*background-color: #dddddd;*/
+  /*color: #333333;*/
 }
-  .dd_title:after{
+  .closable-opened:after{
     display: block;
     position: absolute;
     right: 19px;
@@ -326,7 +327,7 @@ a:hover{
     -webkit-transform: rotate(0deg);
     content: "";
   }
-  .dd_title1:after{
+  .closable-opened.gray-header:after{
     display: block;
     position: absolute;
     right: 19px;
@@ -565,16 +566,20 @@ a:hover{
   .stat_table__col1{
     width: 95px;
   }
-  .gray_bg{
+  .gray_bg,
+  .reklama_title_wrap{
     background-color: #dddddd;
   }
-  .gray_bg1{
+  .gray_bg1,
+  .reklama_title_content{
     background-color: #ededed;
   }
-  .brown_bg{
+  .brown_bg,
+  .sponsors_title_wrap{
     background-color: #ded7b4;
   }
-  .brown_bg1{
+  .brown_bg1,
+  .sponsors_content_wrap{
     background-color: #ede6c6;
   }
 
@@ -655,6 +660,72 @@ a:hover{
     padding: 30px 0;
     text-align: center;
   }
+/*=====================> Competition Page <========================*/
+ .carousel_box{
+    padding: 10px 0 102px;
+   background: #28b2e9;
+    background: -moz-linear-gradient(top,  #28b2e9 0%, #6ed0f6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#28b2e9), color-stop(100%,#6ed0f6));
+    background: -webkit-linear-gradient(top,  #28b2e9 0%,#6ed0f6 100%);
+    background: -o-linear-gradient(top,  #28b2e9 0%,#6ed0f6 100%);
+    background: -ms-linear-gradient(top,  #28b2e9 0%,#6ed0f6 100%);
+    background: linear-gradient(to bottom,  #28b2e9 0%,#6ed0f6 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28b2e9', endColorstr='#6ed0f6',GradientType=0 );
+ }
+.competitions_box1{
+  border-top: 1px solid #666666;
+  -webkit-box-shadow: inset 0 1px 0 #c4c4c4;
+  -moz-box-shadow: inset 0 1px 0 #c4c4c4;
+  box-shadow: inset 0 1px 0 #c4c4c4;
+}
+.competitions_nav{
+  position: absolute;
+  left: -10px;
+  top: -44px;
+}
+.competitions_nav:after{
+  display: block;
+  height: 2px;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  position: absolute;
+  z-index: 99;
+  background: url(../images/top_stripe.jpg) 0 0 repeat-x;
+  content: "";
+}
+.competitions_nav__item{
+  float: left;
+  margin: 0 15px;
+}
+.competitions_nav__item a{
+  display: block;
+  background: url(../images/top_stripe.jpg) 0 0 repeat-x #fff;
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 12px 5px 11px;
+  color: #0065b5;
+  text-decoration: underline;
+}
+  .competitions_nav__item a:before,
+  .competitions_nav__item a:after{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 45px;
+    top: 0;
+    z-index: 99;
+    content: "";
+  }
+  .competitions_nav__item a:before{
+    left: -15px;
+    background: url(../images/l_curve.png) 0 0 no-repeat;
+  }
+  .competitions_nav__item a:after{
+    right: -15px;
+    background: url(../images/r_curve.png) 0 0 no-repeat;
+  }
 /*=====================> Paragraphs ========================*/
 
 p {margin-bottom:18px}
@@ -723,6 +794,7 @@ p {margin-bottom:18px}
   }
     .list3_sub_item.current{
       color: #333;
+      margin-left: 20px;
       padding-left: 17px;
       background: url(../images/black_arrow_sm.png) 0 3px no-repeat;
     }
@@ -1051,9 +1123,13 @@ a:hover,
 
 /*================================>> Footer <<========================================*/
 footer{
-  padding:15px 20px 20px;
-  background: #000;
   font-size: 15px;
+}
+.footer_inner{
+  padding:15px 20px 20px;
+}
+footer .grid_12{
+  background: #000;
 }
 footer,
 footer a{
@@ -1077,20 +1153,92 @@ footer a{text-decoration: underline;}
 }
 
 .bottom_box{
-  background: #333333;
   color: #999999;
   font-size: 16px;
   line-height: 20px;
+}
+.bottom_box .grid_12{
+  background: #333333;
   padding: 35px 0px 22px;
 }
 .bottom_box a{
   text-decoration: underline;
 }
+.bottom_box__left{
+  padding-left: 19px;
+}
 .bottom_box__right{
   text-align: right;
+  padding-right: 19px;
 }
 
 .bottom_box__sm_col{
   float: left;
   width: 160px;
 }
+
+.blue-header{
+  background-color: #0065b5;
+}
+
+.red-header{
+  background-color: #ab0000;
+}
+
+.gray-header{
+  background-color: #dddddd;
+}
+.gray-header,
+.gray-header a{
+  color: #333333;
+}
+.gray-header a{text-decoration: underline;}
+
+.blue-header,
+.red-header,
+.blue-header a,
+.red-header a{
+  color: #fff;
+}
+
+.dd_title.closable-opened.active:after,
+.dd_title1.closable-opened.active:after{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+.dd_title1{
+  
+}
+  .closable-opened:after{
+    display: block;
+    position: absolute;
+    right: 19px;
+    top: 16px;
+    width: 32px;
+    height: 21px;
+    background: url(../images/title_arrow.png) 0 0 no-repeat;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    content: "";
+  }
+
+  .fullwidth_bg nav{
+    background: #ede6c6;
+  }
+  .fullwidth_bg .slider_title1.blue-header{
+    background: #0065b5;
+  }
+  .fullwidth_bg .slider_title1.red-header{
+    background: #ab0000;
+  }
+  .fullwidth_bg .slider_box{
+    background: #303030;
+    background: -moz-linear-gradient(top,  #303030 0%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303030), color-stop(100%,#000000));
+    background: -webkit-linear-gradient(top,  #303030 0%,#000000 100%);
+    background: -o-linear-gradient(top,  #303030 0%,#000000 100%);
+    background: -ms-linear-gradient(top,  #303030 0%,#000000 100%);
+background: linear-gradient(to bottom,  #303030 0%,#000000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#000000',GradientType=0 );
+
+  }

@@ -31,22 +31,24 @@
 <!--==============================header=================================-->
  	<header>
     <div class="container_12">
-      <div class="wrapper header_inner">
-        <h1 class="logo">
-          <a href="index.html">
-            Всероссийская <br>
-            Федерация Волейбола
-          </a>
-        </h1>
-        <div class="header_links">
-          <a href="#" class="header_icon home"></a>
-          <a href="#" class="header_icon sitemap"></a>
-          <a href="#" class="header_icon mail"></a>
+      <div class="row header_inner">
+        <div class="grid_12">
+          <h1 class="logo">
+            <a href="index.html">
+              Всероссийская <br>
+              Федерация Волейбола
+            </a>
+          </h1>
+          <div class="header_links">
+            <a href="#" class="header_icon home"></a>
+            <a href="#" class="header_icon sitemap"></a>
+            <a href="#" class="header_icon mail"></a>
+          </div>
+          <form class="wrapper header_search">
+            <input type="text" class="header_serch__field" value="Поиск по сайту" onBlur="if(this.value=='') this.value='Поиск по сайту'" onFocus="if(this.value =='Поиск по сайту' ) this.value=''">
+            <button class="blue_bg header_search__btn">искать</button>
+          </form>
         </div>
-        <form class="wrapper header_search">
-          <input type="text" class="header_serch__field" value="Поиск по сайту" onBlur="if(this.value=='') this.value='Поиск по сайту'" onFocus="if(this.value =='Поиск по сайту' ) this.value=''">
-          <button class="blue_bg header_search__btn">искать</button>
-        </form>
       </div>
     </div>
   </header>
@@ -72,7 +74,7 @@
 <!--==============================content================================-->
   <section id="content" class="cont_pad">
   	<div class="container_12">
-      <div class="wrapper">
+      <div class="row">
         <div class="grid_3">
           <ul class="list3">
             <li class="list3_item"><a href="#" class="list3_link">Руководство</a></li>
@@ -104,8 +106,8 @@
             <span>Региональные отделения</span>
           </div>
           
-          <div class="wrapper p6">
-            <div class="grid_3 alpha">
+          <div class="row p6">
+            <div class="grid_3">
               <figure class="association">
                 <div class="assoc_img">
                   <img src="images/assoc1.jpg" alt="">
@@ -125,7 +127,7 @@
                 </figcaption>
               </figure>
             </div>
-            <div class="grid_3 omega">
+            <div class="grid_3">
               <figure class="association">
                 <div class="assoc_img">
                   <img src="images/assoc3.jpg" alt="">
@@ -137,7 +139,7 @@
             </div>
           </div>
 
-          <div class="wrapper">
+          <div class="row">
             <div class="grid_3">
               <figure class="association">
                 <div class="assoc_img">
@@ -168,7 +170,7 @@
   <section class="wrapper">
     <div class="brown_bg">
       <div class="container_12">
-        <div class="wrapper">
+        <div class="row">
           <div class="grid_12">
             <h2 class="title4 t_pad">Спонсоры <a href="#" class="link5">Подробнее</a></h2>
           </div>
@@ -177,7 +179,7 @@
     </div>
     <div class="brown_bg1">
       <div class="container_12">
-        <div class="wrapper">
+        <div class="row">
           <div class="grid_12">
             <div class="partners_labels">
               <img src="images/sponsor1.jpg" alt="">
@@ -203,7 +205,7 @@
   
   <aside class="bottom_box">
     <div class="container_12">
-      <div class="wrapper">
+      <div class="row">
         <div class="grid_12 clearfix">
           <div class="f_left wrapper bottom_box__left">
             <div class="bottom_box__sm_col">
@@ -236,7 +238,7 @@
 <!--==============================footer=================================-->
 <footer>
   <div class="container_12">
-    <div class="wrapper">
+    <div class="row">
       <div class="clearfix grid_12">
         <div class="f_left">
           © 2001 — 2013 ОО «Всероссийская Федерация Волейбола»
