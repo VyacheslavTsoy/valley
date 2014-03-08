@@ -190,7 +190,7 @@ a:hover{
   padding: 14px 0px 36px;
 }
   h1.logo{
-    padding: 19px 0 0;
+    padding: 19px 0 0 20px;
     float: left;
   }
   h1.logo a{
@@ -206,6 +206,7 @@ a:hover{
 
 .header_links{
   float: right;
+  padding-right: 20px;  
 }
   .header_icon{
     display: inline-block;
@@ -228,7 +229,7 @@ a:hover{
 .header_search{
   float: right;
   clear: right;
-  padding: 25px 2px 0;
+  padding: 25px 20px 0;
 }
   .header_serch__field{
     float: left;
@@ -238,7 +239,7 @@ a:hover{
     margin: 0;
     width: 244px;
     padding: 5px 7px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-family: "calibriregular", Arial, Helvetica, sans-serif;
   }
   .header_search__btn{
@@ -249,13 +250,14 @@ a:hover{
     font-size: 16px;
     text-transform: uppercase;
     font-family: "calibriregular", Arial, Helvetica, sans-serif;
-    padding: 5px 29px 6px;
+    padding: 5px 26px;
     margin: 0 0 0 10px;
     cursor: pointer;
+    letter-spacing: 1px;
     outline: none;
   }
   .header_search__btn:hover{
-    background-color: #ab0000;
+    background-color: #3399cc;
   }
 /*=====================> NEWS ========================*/
 .news_times{
@@ -297,15 +299,17 @@ a:hover{
   /*background-color: #0065b5;*/
   padding: 15px 20px 12px;
   color: #fff;
-  font-size: 17px;
+  font-size: 18px;
   position: relative;
   cursor: pointer;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 .dd_title.active{
   /*background-color: #ab0000;*/
 }
-
+.active.extra_slide{
+  margin-bottom: 20px;
+}
 .dd_title.active:after,
 .dd_title1.active:after{
   transform: rotate(180deg);
@@ -567,19 +571,23 @@ a:hover{
     width: 95px;
   }
   .gray_bg,
-  .reklama_title_wrap{
+  .fullwidth_bg .reklama_title_wrap,
+  .reklama_title_wrap .grid_12{
     background-color: #dddddd;
   }
   .gray_bg1,
-  .reklama_title_content{
+  .fullwidth_bg .reklama_content,
+  .reklama_content .grid_12{
     background-color: #ededed;
   }
   .brown_bg,
-  .sponsors_title_wrap{
+  .fullwidth_bg .sponsors_title_row,
+  .sponsors_title_row .grid_12{
     background-color: #ded7b4;
   }
   .brown_bg1,
-  .sponsors_content_wrap{
+  .fullwidth_bg .sponsors_content_row,
+  .sponsors_content_row .grid_12{
     background-color: #ede6c6;
   }
 
@@ -643,9 +651,11 @@ a:hover{
   text-align: center;
   padding: 25px 0 19px;
 }
-  .partners_labels img{
+  .partners_labels li{
+    display: inline-block;
     margin: 0 14px 9px;
   }
+  .partners_labels a{display: block;}
 
 .advert_box1{
   margin: 70px 0 0;
@@ -1128,7 +1138,8 @@ footer{
 .footer_inner{
   padding:15px 20px 20px;
 }
-footer .grid_12{
+footer .grid_12,
+.fullwidth_bg footer{
   background: #000;
 }
 footer,
@@ -1160,6 +1171,9 @@ footer a{text-decoration: underline;}
 .bottom_box .grid_12{
   background: #333333;
   padding: 35px 0px 22px;
+}
+.fullwidth_bg .bottom_box{
+  background: #333333;
 }
 .bottom_box a{
   text-decoration: underline;
@@ -1225,10 +1239,11 @@ footer a{text-decoration: underline;}
   .fullwidth_bg nav{
     background: #ede6c6;
   }
-  .fullwidth_bg .slider_title1.blue-header{
+  .fullwidth_bg .slider_title1,
+  .slider_title1.blue-header .grid_12{
     background: #0065b5;
   }
-  .fullwidth_bg .slider_title1.red-header{
+  .fullwidth_bg .slider_title2{
     background: #ab0000;
   }
   .fullwidth_bg .slider_box{

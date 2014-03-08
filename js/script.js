@@ -61,7 +61,8 @@ $(window).load(function() {
       owl.trigger('owl.prev');
     })
     $(".dd_title, .dd_title1").click(function(){
+      var slide = $(this).attr("data-slide");
       $(this).toggleClass("active");
-      $(this).next().slideToggle();
+      $(slide).slideToggle();
     })
    });

@@ -27,7 +27,7 @@
     	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
     <![endif]-->
 </head>
-<body class="fullwidth_bg">
+<body class="fullwidth_bg1">
 <!--==============================header=================================-->
  	<header>
     <div class="container_12">
@@ -76,11 +76,11 @@
   </nav>
 
   <section class="slider_box">
-    <div class="slider_title1 blue-header">
+    <div class="slider_title1">
       <div class="container_12">
         <div class="row">
           <div class="grid_12">
-            <h2 class="dd_title blue-header closable-opened">
+            <h2 data-slide="#slide1" class="dd_title blue-header closable-opened extra_slide">
             В центре внимания <span class="arrow"></span>  <a href="#" class="link1">Все новости</a>
           </h2>
           </div>
@@ -90,7 +90,7 @@
     <div class="container_12">
       <div class="row">
         <div class="grid_12">
-          <article class="dd_content">
+          <article class="dd_content" id="slide1">
             <div class="scroll-pane news_col">
               <ul class="news_list">
                 <li class="news_list__item">
@@ -262,11 +262,11 @@
   </section>
 <!--==============================content================================-->
   <section id="content">
-    <div class="slider_title1 red-header">
+    <div class="slider_title2">
       <div class="container_12">
         <div class="row">
           <div class="grid_12">
-            <h2 class="dd_title red-header closable-opened">Соревнования</h2>
+            <h2 data-slide="#slide2" class="dd_title red-header closable-opened">Соревнования</h2>
           </div>
         </div>
       </div>
@@ -275,7 +275,7 @@
       <div class="row">
         <div class="grid_12">
           <article class="competitions_box">
-            <div class="dd_content">
+            <div class="dd_content" id="slide2">
               <div class="competitions">
                 <a class="car_btn prev"></a>
                 <a class="car_btn next"></a>
@@ -361,8 +361,8 @@
       <article class="p2 row">
         <div class="grid_6">
           <div class="content_row p2">
-            <h2 class="dd_title red-header closable-opened">Решения директората <span class="arrow"></span> <a href="#" class="link1">Подробнее</a></h2>
-            <div class="dd_content">
+            <h2 data-slide="#slide3" class="dd_title red-header closable-opened">Решения директората <span class="arrow"></span> <a href="#" class="link1">Подробнее</a></h2>
+            <div class="dd_content" id="slide3">
               <div class="dd_content__inner lh_20">
                 <ul class="time_list">
                   <li class="time_list__item">
@@ -398,8 +398,8 @@
           </div>
           
           <div class="content_row p2">
-            <h2 class="dd_title blue-header closable-opened">90 лет Российскому Волейболу <span class="arrow"></span> <a href="#" class="link1">Подробнее</a></h2>
-            <div class="dd_content">
+            <h2 data-slide="#slide4" class="dd_title blue-header closable-opened">90 лет Российскому Волейболу <span class="arrow"></span> <a href="#" class="link1">Подробнее</a></h2>
+            <div id="slide4" class="dd_content">
               <figure class="event_img">
                 <img src="images/event_img.jpg" alt="">
                 <div class="event_img__banner">
@@ -411,8 +411,8 @@
           </div>
         
           <div class="content_row">
-            <h2 class="dd_title gray-header closable-opened">Положение команд <span class="arrow"></span> <a href="#">Статистика 2013 год</a></h2>
-            <div class="dd_content">
+            <h2 data-slide="#slide5" class="dd_title gray-header closable-opened">Положение команд <span class="arrow"></span> <a href="#">Статистика 2013 год</a></h2>
+            <div id="slide5" class="dd_content">
               <div class="wrapper statistics">
                 <div class="statistics_col">
                   <h4 class="title3">Мужчины</h4>
@@ -640,8 +640,8 @@
         </div>
         <div class="grid_6">
           <div class="p2 content_row">
-            <h2 class="dd_title red-header closable-opened">Календарь соревнований <span class="arrow"></span> <a href="#" class="link1">Все соревнования</a></h2>
-            <div class="dd_content">
+            <h2 data-slide="#slide5" class="dd_title red-header closable-opened">Календарь соревнований <span class="arrow"></span> <a href="#" class="link1">Все соревнования</a></h2>
+            <div id="slide5" class="dd_content">
               <div class="dd_content__inner1">
                 <div class="wrapper calendar_box">
                   <div class="calendar_col">
@@ -662,8 +662,8 @@
           </div>
         
           <div class="p2 content_row">
-            <h2 class="dd_title1 blue-header closable-opened">Партнеры <span class="arrow1"></span> <a href="#" class="link4">Подробнее</a></h2>
-            <div class="dd_content">
+            <h2 data-slide="#slide6" class="dd_title1 blue-header closable-opened">Партнеры <span class="arrow1"></span> <a href="#" class="link4">Подробнее</a></h2>
+            <div id="slide6" class="dd_content">
               <div class="gray_bg1 wrapper partners">
                 <img src="images/partner1.png" alt="">
                 <img src="images/partner2.png" alt="">
@@ -703,60 +703,64 @@
   </section>
 
   <section class="reklama">
-    <div class="container_12">
-      <div class="row">
-        <div class="grid_12 reklama_title_wrap">
-          <h2 class="title4 t_pad">Реклама</h2>
+    <div class="reklama_title_wrap">
+      <div class="container_12">
+        <div class="row">
+          <div class="grid_12">
+            <h2 class="title4 t_pad">Реклама</h2>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container_12">
-      <div class="row">
-        <div class="grid_12 reklama_title_content">
-          <div class="advert_box">
-            <figure class="f_left advert">
-              <img src="images/advert_logo.png" alt="">
-              <figcaption class="advert_description">
-                <spsan class="red">Alfos</spsan> — Интернет-магазин товаров для спорта, отдыха и здоровья, обеспечение профессиональных спортивных клубов и спортивных федераций высококачественной продукцией.
-              </figcaption>
-            </figure>
-            <div class="wrapper">
-              <ul class="advert_list">
-                <li class="advert_item">
-                  <figure class="advert_img">
-                    <img src="images/advert1.png" alt="">
-                  </figure>
-                  <figcaption>
-                    <a href="#">Бандажи и фиксаторы</a>
-                  </figcaption>
-                </li>
-                <li class="advert_item">
-                  <figure class="advert_img">
-                    <img src="images/advert2.png" alt="">
-                  </figure>
-                  <figcaption>
-                    <a href="#">Globus Winshot 1000 PRO</a> 430 000
-                  </figcaption>
-                </li>
-                <li class="advert_item">
-                  <figure class="advert_img">
-                    <img src="images/advert3.png" alt="">
-                  </figure>
-                  <figcaption>
-                    <a href="#">Micasa MVA 200</a> <br>430 000
-                  </figcaption>
-                </li>
-                <li class="advert_item">
-                  <figure class="advert_img">
-                    <img src="images/advert4.png" alt="">
-                  </figure>
-                  <figcaption>
-                    <a href="#">Тайпы и подтейпники</a>
-                  </figcaption>
-                </li>
-              </ul>
-              <div class="link_wrap1">
-                <a href="#" class="link5">Открылся офис продаж в УСЗ "Дружба"</a>
+    <div class="reklama_content">
+      <div class="container_12">
+        <div class="row">
+          <div class="grid_12">
+            <div class="advert_box">
+              <figure class="f_left advert">
+                <img src="images/advert_logo.png" alt="">
+                <figcaption class="advert_description">
+                  <spsan class="red">Alfos</spsan> — Интернет-магазин товаров для спорта, отдыха и здоровья, обеспечение профессиональных спортивных клубов и спортивных федераций высококачественной продукцией.
+                </figcaption>
+              </figure>
+              <div class="wrapper">
+                <ul class="advert_list">
+                  <li class="advert_item">
+                    <figure class="advert_img">
+                      <img src="images/advert1.png" alt="">
+                    </figure>
+                    <figcaption>
+                      <a href="#">Бандажи и фиксаторы</a>
+                    </figcaption>
+                  </li>
+                  <li class="advert_item">
+                    <figure class="advert_img">
+                      <img src="images/advert2.png" alt="">
+                    </figure>
+                    <figcaption>
+                      <a href="#">Globus Winshot 1000 PRO</a> 430 000
+                    </figcaption>
+                  </li>
+                  <li class="advert_item">
+                    <figure class="advert_img">
+                      <img src="images/advert3.png" alt="">
+                    </figure>
+                    <figcaption>
+                      <a href="#">Micasa MVA 200</a> <br>430 000
+                    </figcaption>
+                  </li>
+                  <li class="advert_item">
+                    <figure class="advert_img">
+                      <img src="images/advert4.png" alt="">
+                    </figure>
+                    <figcaption>
+                      <a href="#">Тайпы и подтейпники</a>
+                    </figcaption>
+                  </li>
+                </ul>
+                <div class="link_wrap1">
+                  <a href="#" class="link5">Открылся офис продаж в УСЗ "Дружба"</a>
+                </div>
               </div>
             </div>
           </div>
@@ -779,22 +783,22 @@
       <div class="container_12">
         <div class="row">
           <div class="grid_12 sponsors_content_wrap">
-            <div class="partners_labels">
-              <img src="images/sponsor1.jpg" alt="">
-              <img src="images/sponsor2.jpg" alt="">
-              <img src="images/sponsor3.jpg" alt="">
-              <img src="images/sponsor4.jpg" alt="">
-              <img src="images/sponsor5.jpg" alt="">
-              <img src="images/sponsor6.jpg" alt="">
-              <img src="images/sponsor7.jpg" alt="">
-              <img src="images/sponsor8.jpg" alt="">
-              <img src="images/sponsor9.jpg" alt="">
-              <img src="images/sponsor10.jpg" alt="">
-              <img src="images/sponsor11.jpg" alt="">
-              <img src="images/sponsor12.jpg" alt="">
-              <img src="images/sponsor13.jpg" alt="">
-              <img src="images/sponsor14.jpg" alt="">
-            </div>
+            <ul class="partners_labels">
+              <li><a href="#"><img src="images/sponsor1.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor2.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor3.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor4.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor5.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor6.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor7.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor8.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor9.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor10.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor11.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor12.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor13.jpg" alt=""></a></li>
+              <li><a href="#"><img src="images/sponsor14.jpg" alt=""></a></li>
+            </ul>
           </div>
         </div>
       </div>

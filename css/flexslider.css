@@ -65,6 +65,7 @@
 	line-height: 30px;
 	margin-bottom: 9px;
 	text-decoration: underline;
+	max-width: 450px;
 }
 .slide_label{
 	background: #666666;
