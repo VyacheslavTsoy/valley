@@ -31,39 +31,45 @@
 <!--==============================header=================================-->
  	<header>
     <div class="container_12">
-      <div class="wrapper header_inner">
-        <h1 class="logo">
-          <a href="index.html">
-            Всероссийская <br>
-            Федерация Волейбола
-          </a>
-        </h1>
-        <div class="header_links">
-          <a href="#" class="header_icon home"></a>
-          <a href="#" class="header_icon sitemap"></a>
-          <a href="#" class="header_icon mail"></a>
+      <div class="row header_inner">
+        <div class="grid_12">
+          <h1 class="logo">
+            <a href="index.html">
+              Всероссийская <br>
+              Федерация Волейбола
+            </a>
+          </h1>
+          <div class="header_links">
+            <a href="#" class="header_icon home"></a>
+            <a href="#" class="header_icon sitemap"></a>
+            <a href="#" class="header_icon mail"></a>
+          </div>
+          <form class="wrapper header_search">
+            <input type="text" class="header_serch__field" value="Поиск по сайту" onBlur="if(this.value=='') this.value='Поиск по сайту'" onFocus="if(this.value =='Поиск по сайту' ) this.value=''">
+            <button class="blue_bg header_search__btn">искать</button>
+          </form>
         </div>
-        <form class="wrapper header_search">
-          <input type="text" class="header_serch__field" value="Поиск по сайту" onBlur="if(this.value=='') this.value='Поиск по сайту'" onFocus="if(this.value =='Поиск по сайту' ) this.value=''">
-          <button class="blue_bg header_search__btn">искать</button>
-        </form>
       </div>
     </div>
   </header>
   <nav>
     <div class="container_12">
-      <div class="clearfix nav_inner">
-        <ul class="menu">
-         <li class="menu__item current"><a class="menu_link" href="about.html">О федерации</a></li>
-          <li class="menu__item"><a class="menu_link" href="teams.html">Сборные</a></li>
-          <li class="menu__item"><a class="menu_link" href="clubs.html">Клубы</a></li>
-          <li class="menu__item"><a class="menu_link" href="competitions.html">Соревнования</a></li>
-          <li class="menu__item"><a class="menu_link" href="media.html">Медиа</a></li>
-        </ul>
-        <div class="nav_social">
-         <a href="#" class="nav_soc__icon rss"></a>
-         <a href="#" class="nav_soc__icon facebook"></a>
-         <a href="#" class="nav_soc__icon twitter"></a>
+      <div class="row">
+        <div class="grid_12">
+          <div class="clearfix nav_inner">
+            <ul class="menu">
+               <li class="menu__item current"><a class="menu_link" href="about.html">О федерации</a></li>
+                <li class="menu__item"><a class="menu_link" href="teams.html">Сборные</a></li>
+                <li class="menu__item"><a class="menu_link" href="clubs.html">Клубы</a></li>
+                <li class="menu__item"><a class="menu_link" href="competitions.html">Соревнования</a></li>
+              <li class="menu__item"><a class="menu_link" href="media.html">Медиа</a></li>
+            </ul>
+            <div class="nav_social">
+             <a href="#" class="nav_soc__icon rss"></a>
+             <a href="#" class="nav_soc__icon facebook"></a>
+             <a href="#" class="nav_soc__icon twitter"></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -72,7 +78,7 @@
 <!--==============================content================================-->
   <section id="content" class="cont_pad">
   	<div class="container_12">
-      <div class="wrapper">
+      <div class="row">
         <div class="grid_3">
           <ul class="list3">
             <li class="list3_item current"><a href="#" class="list3_link">Руководство</a>
@@ -103,14 +109,14 @@
             <span>Руководство</span>
           </div>
 
-          <article class="wrapper leaders p5">
-            <div class="grid_3 alpha">
+          <article class="row leaders p5">
+            <div class="grid_3">
               <figure class="leader">
                 <div class="leader_img">
-                  <img src="images/gray_img.jpg" alt="">
+                  <a href="#"><a href="#"><img src="images/gray_img.jpg" alt=""></a></a>
                 </div>
                 <figcaption class="title5 leader_name">
-                  Патрушев Николай Платонович
+                  <a href="#">Патрушев Николай Платонович</a>
                 </figcaption>
                 <div class="leader_position font1">
                   Председатель Наблюдательного Совета ВФВ
@@ -120,23 +126,23 @@
             <div class="grid_3">
               <figure class="leader">
                 <div class="leader_img">
-                  <img src="images/gray_img.jpg" alt="">
+                  <a href="#"><img src="images/gray_img.jpg" alt=""></a>
                 </div>
                 <figcaption class="title5 leader_name">
-                  Шевченко Станислав Владимирович
+                  <a href="#">Шевченко Станислав Владимирович</a>
                 </figcaption>
                 <div class="leader_position font1">
                   Президент Всероссийской федерации волейбола
                 </div>
               </figure>
             </div>
-            <div class="grid_3 omega">
+            <div class="grid_3">
               <figure class="leader">
                 <div class="leader_img">
-                  <img src="images/gray_img.jpg" alt="">
+                  <a href="#"><img src="images/gray_img.jpg" alt=""></a>
                 </div>
                 <figcaption class="title5 leader_name">
-                  Ярёменко Александр Михайлович
+                  <a href="#">Ярёменко Александр Михайлович</a>
                 </figcaption>
                 <div class="leader_position font1">
                   Генеральный секретарь Всероссийской федерации волейбола
@@ -145,14 +151,14 @@
             </div>
           </article>
 
-          <article class="wrapper leaders">
-            <div class="grid_3 alpha">
+          <article class="row leaders">
+            <div class="grid_3">
               <figure class="leader">
                 <div class="leader_img">
-                  <img src="images/gray_img.jpg" alt="">
+                  <a href="#"><img src="images/gray_img.jpg" alt=""></a>
                 </div>
                 <figcaption class="title5 leader_name">
-                  Горбенко Андрей Владимирович
+                  <a href="#">Горбенко Андрей Владимирович</a>
                 </figcaption>
                 <div class="leader_position font1">
                   Генеральный директор Всероссийской федерации волейбола
@@ -162,23 +168,23 @@
             <div class="grid_3">
               <figure class="leader">
                 <div class="leader_img">
-                  <img src="images/gray_img.jpg" alt="">
+                  <a href="#"><img src="images/gray_img.jpg" alt=""></a>
                 </div>
                 <figcaption class="title5 leader_name">
-                  Паткин Владимир Леонидович
+                  <a href="#">Паткин Владимир Леонидович</a>
                 </figcaption>
                 <div class="leader_position font1">
                   Исполнительный директор Всероссийской федерации волейбола
                 </div>
               </figure>
             </div>
-            <div class="grid_3 omega">
+            <div class="grid_3">
               <figure class="leader">
                 <div class="leader_img">
-                  <img src="images/gray_img.jpg" alt="">
+                  <a href="#"><img src="images/gray_img.jpg" alt=""></a>
                 </div>
                 <figcaption class="title5 leader_name">
-                  Жуков Валентин Васильевич
+                  <a href="#">Жуков Валентин Васильевич</a>
                 </figcaption>
                 <div class="leader_position font1">
                   Председатель Наблюдательного Совета ВФВ
