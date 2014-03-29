@@ -65,4 +65,5 @@ $(window).load(function() {
       $(this).toggleClass("active");
       $(slide).slideToggle();
     })
+
    });
